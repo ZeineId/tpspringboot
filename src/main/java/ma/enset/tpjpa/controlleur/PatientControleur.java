@@ -29,9 +29,7 @@ public class PatientControleur {
 	
 	@GetMapping("/liste")
 	public List<Patient> patients(){
-		//return patientRepository.findAll();
 		return patientService.findAlll();
-		
 	}
 	
 	@GetMapping("/nom_patient")

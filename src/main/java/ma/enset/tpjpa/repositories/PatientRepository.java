@@ -12,26 +12,13 @@ import ma.enset.tpjpa.entitites.Patient;
 
 public interface PatientRepository extends JpaRepository<Patient, Long> {
 
-	
 	public List<Patient> findByNomContains(String name);
-	
-
 	public Patient findById(Integer i);
-	
 	public List<Patient> findByMalade(boolean b);
-	
 	public List<Patient> findByNomContainsAndMalade(String name, boolean b);
-
 	public void deleteById(Integer i);
-	
-	//public void updateById(Integer i);
-
-
 	public boolean existsById(Integer i);
-
-
 	public Patient findByNom(String nom);
-
 
 }
 
