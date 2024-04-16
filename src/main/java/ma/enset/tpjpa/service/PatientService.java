@@ -31,7 +31,17 @@ public class PatientService {
 		patientRepository.deleteById(i);
 	};
 	
-	
+	public Patient findByNom(String nom) {
+		 Patient p = patientRepository.findByNom(nom);
+
+		 if(p != null) {
+				return patientRepository.findByNom(nom);
+
+		 }else {
+			 return null;
+		 }
+		 
+	}
 	
 	public void updateById(Integer i, Patient p) {
 		

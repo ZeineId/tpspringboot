@@ -30,5 +30,8 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
 	public boolean existsById(Integer i);
 
 
+	public Patient findByNom(String nom);
+
+
 }
 
