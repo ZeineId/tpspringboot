@@ -58,4 +58,16 @@ public class PatientControleur {
 		patientService.updateById(i, p);
 	}
 	
+	
+	@GetMapping("/user")
+	public String getUser() {
+		return "Bienvenue utilisateur";
+	}
+	
+	@GetMapping("/admin")
+	public String getAdmin() {
+		return "Bienvenue administrateur";
+	}
+	
+	
 }

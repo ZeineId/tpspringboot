@@ -1,22 +1,18 @@
 package ma.enset.tpjpa;
 
-import java.util.Date;
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 
-import ma.enset.tpjpa.controlleur.PatientControleur;
-import ma.enset.tpjpa.entitites.Patient;
 import ma.enset.tpjpa.repositories.PatientRepository;
 
 @SpringBootApplication
 public class TpJpaApplication implements CommandLineRunner{
 
+	
 	@Autowired
 	private PatientRepository patientRepository;
 	
